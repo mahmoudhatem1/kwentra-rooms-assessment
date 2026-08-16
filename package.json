@@ -1,0 +1,29 @@
+{
+  "name": "kwentra-rooms-assessment",
+  "version": "1.0.0",
+  "description": "Senior Automation Tester Assessment – Kwentra Rooms Mini-PMS",
+  "scripts": {
+    "start": "node server.js",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:headed": "cypress run --headed --no-exit"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.1.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.1",
+    "@types/node": "^20.11.0",
+    "cypress": "^13.6.0",
+    "esbuild": "^0.20.0",
+    "typescript": "^5.3.3"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": [
+      "cypress/e2e/step-definitions/[filepath].steps.{js,ts}",
+      "cypress/e2e/step-definitions/common/**/*.{js,ts}"
+    ]
+  }
+}

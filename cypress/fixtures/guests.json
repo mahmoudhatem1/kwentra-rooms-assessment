@@ -1,0 +1,22 @@
+{
+  "standard": {
+    "name":  "Alice Johnson",
+    "email": "alice@example.com",
+    "count": 2
+  },
+  "deluxe": {
+    "name":  "Bob Martinez",
+    "email": "bob@example.com",
+    "count": 3
+  },
+  "suite": {
+    "name":  "Carol Williams",
+    "email": "carol@example.com",
+    "count": 4
+  },
+  "solo": {
+    "name":  "David Lee",
+    "email": "david@example.com",
+    "count": 1
+  }
+}
